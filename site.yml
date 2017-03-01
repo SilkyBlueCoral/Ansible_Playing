@@ -1,0 +1,11 @@
+---
+- name: install and start apache
+  hosts: webservers
+  remote_user: faile
+  become: yes
+
+  tasks: 
+
+
+
+

@@ -1,0 +1,6 @@
+{{ apache_test_message }} {{ ansible_distribution }} {{ansible_distribution_file}} <br>
+Current Host: {{ ansible_hostname }} <br>
+Server List: <br>
+{% for host in groups.webservers %}
+{{ host }} <br>
+{% endfor %}
